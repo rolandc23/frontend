@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 80px;
+  position: fixed;
+  background-color: #eeeeee;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.logo {
+  display: flex;
+  margin: 15px;
+  height: fit-content;
+  padding: 0;
+}
+
+.navigation-small {
+  display: none;
+}
+
+.navigation-big {
+  display: none;
+}
+
+.dashboardHeader {
+  font-size: 2em;
+  color: red;
+}
+
+
+@media only screen and (max-device-width: 800px) {
+  .navigation-small {
+    flex-direction: row;
+    text-align: right;
+    display: flex;
+  }
+}
+
+@media only screen and (min-device-width: 801px) {
+  .navigation-big {
+    flex-direction: row;
+    text-align: right;
+    display: flex;
+  }
+}
+
+button {
+  height: fit-content;
+}
+
+footer {
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #999999;
+}
+
+main {
+  position:absolute;
+  overflow:auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top:80px;
+  bottom:50px;
+  width:100%;
+  margin:0;
+}
+
+.dashboard, .blankoPage, .slidoPage {
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+}
+
+.slidoContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(3, 150px);
+  grid-gap: 0;
+}
+
+.slidoContainer, .slidoButtons {
+  align-self: center;
+  justify-self: center;
+}
+
+.slidoSquare {
+  height: 150px;
+  width: 150px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid black;
+}
+
+.dashboardText {
+  height: fit-content;
+  text-align: center;
+}
+
+li {
+  list-style-type: none
+}
+
+.blankoContainer {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+.letterSquare {
+  height: 30px;
+  width: 30px;
+  border: 1px solid black;
+}
+
+input[type=text] {
+  width: 20px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.resetBlanko {
+  width: fit-content;
+  align-self: center;
+}
